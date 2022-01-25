@@ -17,8 +17,18 @@ $(function(){
 	$('#container').css('width',$(window)[0].innerWidth);
 	$('#container').css('height',$(window)[0].innerHeight);
 	console.log($('#container').innerHeight());
-	var num=Math.floor(Math.random()*_image.length);
-	var image=_image[num];
-//	$('.Time').css('background','url('+image+') center center /contain no-repeat');
+	function random_image(){
+		var num=Math.floor(Math.random()*_image.length);
+		var image=_image[num];
+		$('.time_list').css('background','url('+image+') center center /contain no-repeat');
+	}
+	random_image();
+	$('.time_show button').click(function(){
+		$('.Time').addClass('flag');
+		random_image();
+	});
+	$('.time_list').click(function(){
+		$('.Time').removeClass('flag');
+	});
 });
 const _image=['image/baby1.jpg','image/baby2.jpg','image/baby3.jpg','image/baby4.jpg','image/baby5.jpg','image/baby6.jpg','image/baby7.jpg']
