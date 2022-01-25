@@ -21,4 +21,4 @@ $(function(){
 	var image=_image[num];
 	$('.Time').css('background','url('+image+') center center /contain no-repeat');
 });
-const _image=['image/baby1.jpg','image/baby2.jpg','image/baby3.jpg']
+const _image=['image/baby1.jpg','image/baby2.jpg','image/baby3.jpg','image/baby4.jpg','image/baby5.jpg','image/baby6.jpg','image/baby7.jpg']
