@@ -17,4 +17,8 @@ $(function(){
 	$('#container').css('width',$(window)[0].innerWidth);
 	$('#container').css('height',$(window)[0].innerHeight);
 	console.log($('#container').innerHeight());
+	var num=Math.floor(Math.random()*_image.length);
+	var image=_image[num];
+	$('.Time').css('background','url('+image+') center center /contain no-repeat');
 });
+const _image=['image/baby1.jpg','image/baby2.jpg','image/baby3.jpg']
