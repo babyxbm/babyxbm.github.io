@@ -1,1 +1,37 @@
-/*主页css*/
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Time{
+	width: 70%;
+	height: 70%;
+	padding: 20px;
+	background:url(../image/baby3.jpg) center center /contain no-repeat;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Time>div{
+	display: flex;
+	justify-content: center;
+	align-items:baseline;
+}
+.count_text{
+	color: deeppink;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-right: 5px;
+}
+.times_text{
+	font-size: 1em;
+	margin-right: 20px;
+	color: white;
+}
+@media(max-width:480px){
+	.Time{
+		width: 95%;
+		height: auto;
+	}
+}
