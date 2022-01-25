@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "微软雅黑"
+}
+h1,h2,h3,span,p{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: inherit;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-indent: inherit;
+}
+ul,ol,datalist{
+	list-style: none;
+}
+img{transition: .4s;}
+#container{
+	width: 100%;
+	position: relative;
+}
+input,button{
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+/*大字标题*/
+.items{
+	padding: 40px 15%;
+}
+/*大字标题*/
+.title{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.title h2{
+	font-size: 40px;
+	color: #769cd1;
+	font-weight: bold;
+}
+/*大模块readmore*/
+.readmore {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.readmore a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #769cd1;
+	transition: .4s;
+	background-color: transparent;
+	color: #769cd1;
+}
+.readmore a:hover{
+	color: white;
+	background-color: #769cd1;
+}
+.readmore a span{
+	width: 0px;
+	margin-left: 0px;
+	overflow: hidden;
+	color: white;
+	transition: .4s;
+}
+.readmore a:hover span{
+	width: 10px;
+	margin-left: 5px;
+}
+/*datalist 下拉图标清除*/
+input::-webkit-calendar-picker-indicator{
+	display: none!important;
+	-webkit-appearance: none!important;
+}
