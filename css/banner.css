@@ -1,0 +1,89 @@
+/*轮播图css*/
+#banner{
+	width: 100%;
+	height: 769px;
+	position: relative;
+}
+.banner_img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.banner_img div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+}
+.banner_img div:nth-of-type(1){
+	display: block;
+}
+.banner_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+.banner_img span{
+	font-size: 25px;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: .4s;
+	z-index: 2;
+}
+.banner_span_show{
+	animation: _span 1s ease-in-out forwards;
+}
+@keyframes _span{
+	0%{
+		opacity: 0;
+		transform: translate(-50%,-200%);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(-50%,-50%);
+	}
+}
+.banner_bgc{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.banner_bgc img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.banner_btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	z-index: 3;
+	transform: translateX(-50%);
+}
+.banner_btn ul{
+	width: 120px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner_btn li{
+	width: 15px;
+	height: 15px;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: .4s;
+	background-color: transparent;
+	border-radius: 100%;
+}
+.banner_li_show{
+	background-color: #769cd1!important;
+}
